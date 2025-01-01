@@ -7,7 +7,7 @@ function SayHello() {
     <>
       <div className="sayHelloSection" id="sayHelloSection">
         <h1 className="sayHelloTitleArea">
-          <p className="sayHelloPara sayHelloTitleNumber">04. </p>
+          <p className="sayHelloPara sayHelloTitleNumber">03. </p>
           <p className="sayHelloPara sayHelloTitle">What's Next?</p>
         </h1>
         <div className="sayHelloContent">

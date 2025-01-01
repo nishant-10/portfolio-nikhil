@@ -1,0 +1,42 @@
+html{
+  background-color: #0a192f;
+}
+.App {
+  /* background-color: red; */
+  background-color: #0a192fa3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+::-webkit-scrollbar {
+  width: 8px;
+
+  background-color: #0a192f;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* margin-bottom: 70vh; */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #495670;
+
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8892b0;
+}
+@media screen and (max-height: 400px) and (orientation: landscape) {
+  .App {
+    display: none;
+  }
+}

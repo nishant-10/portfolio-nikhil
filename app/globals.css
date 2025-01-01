@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -39,4 +39,37 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+body {
+  margin: 0;
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #0a192f; */
+}
+html {
+  scroll-behavior: smooth;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Make sure the video covers the entire screen */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  /* overflow: hidden; */
+}
+
+#video-background {
+  position: fixed;
+  /* filter: blur(3px); */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:cover; /* Ensures the video covers the screen without distortion */
+  z-index: 1; /* Keep the video behind other content */
 }

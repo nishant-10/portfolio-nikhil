@@ -1,10 +1,10 @@
+'use client'
 import React, { useState } from "react";
 import "../css/projectcards.css";
 import Cards from "./Cards";
 import { useData } from "../contexts/data_context";
 // const data = require("../../public/data/ProjectsCard.json");
 const data = [];
-
 function ProjectCards() {
   const { homepage_data } = useData()
   const [visible, setVisible] = useState(3);
@@ -33,7 +33,7 @@ function ProjectCards() {
   return (
     <>
       <div className="cardArea" id="cardArea">
-        <h1 className="cah1 cardAreaTitle">03. Noteworthy Projects</h1>
+        <h1 className="cah1 cardAreaTitle">02. Noteworthy Projects</h1>
         <h1 className="cah1 cardAreaSubTitle">Personal & Academic</h1>
         <h1 className="cah1 cardAreaInfo">
           Click on card for a demo and Git icon for repository

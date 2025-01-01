@@ -1,36 +1,42 @@
-import React, { useState, useRef, useEffect } from "react";
-import ReactDOM from "react-dom";
+import React, { useState, useEffect, useRef } from "react";
 import "../App.css";
 import "../css/nav.css";
 import { useData } from "../contexts/data_context";
+
 let status = false;
+
 function Navbar() {
   let { homepage_data } = useData();
   const [isHamClicked, hamClick] = useState(false);
   const box = useRef(null);
-  useOutsideAlerter(box);
-  const changeStyles = () => {
-    let element2 = document.getElementById("app2");
-    let element = document.getElementById("hamMenu");
-    var t = ReactDOM.findDOMNode(element);
-    if (!isHamClicked || !status) {
-      t.style.transform = "TranslateX(0)";
+  const hamMenuRef = useRef(null); // Ref for hamMenu
+  const appCoverRef = useRef(null); // Ref for appCover element
 
-      t.style.zIndex = "20";
-      element2.style.filter = "blur(4px)";
-      hamClick(true);
-      status = true;
-    } else if (isHamClicked || status) {
-      t.style.transform = "TranslateX(100%)";
-      element2.style.filter = "blur(0px)";
-      hamClick(false);
-      status = false;
+  useOutsideAlerter(box, hamMenuRef, appCoverRef);
+
+  const changeStyles = () => {
+    if (hamMenuRef.current && appCoverRef.current) {
+      const t = hamMenuRef.current;
+
+      if (!isHamClicked || !status) {
+        t.style.transform = "TranslateX(0)";
+        t.style.zIndex = "20";
+        appCoverRef.current.classList.add("blur"); // Add the blur class
+        hamClick(true);
+        status = true;
+      } else if (isHamClicked || status) {
+        t.style.transform = "TranslateX(100%)";
+        appCoverRef.current.classList.remove("blur"); // Remove the blur class
+        hamClick(false);
+        status = false;
+      }
     }
   };
+
   return (
     <>
       <nav className="nav">
-        <img src={require("../icons8-n-100.png")} alt="" srcSet="" />
+        <img src={"../icons8-n-100.png"} alt="" srcSet="" />
         <ul>
           <li>
             <a href="#heroSection">
@@ -71,7 +77,7 @@ function Navbar() {
           <span></span>
         </div>
 
-        <div id="hamMenu" className="hamMenu">
+        <div id="hamMenu" className="hamMenu" ref={hamMenuRef}>
           <ul>
             <li>
               <a href="#heroSection">
@@ -106,20 +112,27 @@ function Navbar() {
           </ul>
         </div>
       </div>
+      <div id="appCover" ref={appCoverRef}></div> {/* Add ref for appCover */}
     </>
   );
 }
+
 export default Navbar;
-function useOutsideAlerter(ref) {
+
+function useOutsideAlerter(ref, hamMenuRef, appCoverRef) {
   useEffect(() => {
     // Function for click event
     function handleOutsideClick(event) {
-      if (ref.current && !ref.current.contains(event.target) && status) {
-        let element2 = document.getElementById("app2");
-        let element = document.getElementById("hamMenu");
-        var t = ReactDOM.findDOMNode(element);
+      if (
+        ref.current &&
+        !ref.current.contains(event.target) &&
+        status &&
+        hamMenuRef.current &&
+        appCoverRef.current
+      ) {
+        const t = hamMenuRef.current;
         t.style.transform = "TranslateX(100%)";
-        element2.style.filter = "blur(0px)";
+        appCoverRef.current.classList.remove("blur"); // Remove blur when clicked outside
         status = false;
       }
     }
@@ -127,5 +140,5 @@ function useOutsideAlerter(ref) {
     // Adding click event listener
     document.addEventListener("click", handleOutsideClick);
     return () => document.removeEventListener("click", handleOutsideClick);
-  }, [ref]);
+  }, [ref, hamMenuRef, appCoverRef]);
 }
