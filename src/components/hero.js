@@ -14,7 +14,7 @@ function Hero() {
               window.open(`${homepage_data.Socials.LinkedIn ?? "#"}`);
             }}
           >
-            &lt; Nishant Joshi /&gt;
+            &lt; Nikhil Bhandari /&gt;
           </h1>
           <h1 className="built">I build things on web.</h1>
           <span>
@@ -35,10 +35,7 @@ function Hero() {
               className="gitbutton"
               onClick={(e) => {
                 e.preventDefault();
-                window.open(
-                  "https://www.linkedin.com/in/nishant-joshi-831a8715b/",
-                  "_blank"
-                );
+                window.open(`${homepage_data.Socials.LinkedIn ?? "#"}`);
               }}
             >
               Checkout my LinkedIn for more !
