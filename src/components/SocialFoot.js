@@ -101,7 +101,7 @@ function SocialFoot() {
           </a>{" "}
           with <span style={{ color: "red" }}>❤</span>
         </div>
-        <div>Last updated on May 2024</div>
+        <div>Last updated on January 2025</div>
       </div>
     </>
   );
