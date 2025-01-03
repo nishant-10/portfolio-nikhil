@@ -2,7 +2,7 @@ import "./globals.css";
 export const metadata = {
   title: "Nikhil Bhandari - Blogs&Portfolio",
   description:
-    "This is a meta description. Welcome to slingacademy.com. Happy coding and have a nice day",icons: {
+    "Sharing my journey, insights, and practical guides in cybersecurity, ethical hacking, and digital forensics to help you stay secure and informed.",icons: {
       icon: "/logo-2.png", // Path to your favicon or logo
       // apple: "/apple-touch-icon.png", // Optional, for Apple devices
     },
