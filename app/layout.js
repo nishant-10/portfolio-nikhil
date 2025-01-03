@@ -1,4 +1,12 @@
 import "./globals.css";
+export const metadata = {
+  title: "Nikhil Bhandari - Blogs&Portfolio",
+  description:
+    "This is a meta description. Welcome to slingacademy.com. Happy coding and have a nice day",icons: {
+      icon: "/logo-2.png", // Path to your favicon or logo
+      // apple: "/apple-touch-icon.png", // Optional, for Apple devices
+    },
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="hydrated">

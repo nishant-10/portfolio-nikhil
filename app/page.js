@@ -1,14 +1,12 @@
-'use client'
+"use client";
 import Landing from "@/src/components/landing";
-import '../src/css/App.css'
-import ReactDOM from "react-dom";
+import "../src/css/App.css";
 export default function Home() {
   const appCLick = () => {
     // return;
     // let element = document.getElementById("hamMenu");
     // let element2 = document.getElementById("app2");
     // var t = ReactDOM.findDOMNode(element);
-
     // t.style.transform = "TranslateX(100%)";
   };
   return (
@@ -19,7 +17,11 @@ export default function Home() {
      
     )} */}
       <>
-        <div onClick={()=>{appCLick()}}>
+        <div
+          onClick={() => {
+            appCLick();
+          }}
+        >
           <Landing />
         </div>
       </>

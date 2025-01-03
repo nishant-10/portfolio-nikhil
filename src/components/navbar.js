@@ -36,7 +36,7 @@ function Navbar() {
   return (
     <>
       <nav className="nav">
-        <img src={"../icons8-n-100.png"} alt="" srcSet="" />
+        <img src={"../logo-2.png"} alt="" srcSet="" />
         <ul>
           <li>
             <a href="#heroSection">
