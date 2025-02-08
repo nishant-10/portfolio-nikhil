@@ -6,13 +6,12 @@
     "AboutParaTwo": "My journey has been enriched by certifications from TCM Security, internships, and active participation in industry events like OWASP meetups and hackathons. Through my internship at the Center for Cyber Security Studies & Research, I deepened my understanding of tools like OpenVAS, Nessus, and Nmap, while also gaining insights into frameworks like MITRE ATT&CK and ISO 27001.",
     "AboutParaThree": "I enjoy creating educational content such as writeups and walkthroughs for cybersecurity tools and challenges. My goal is to share knowledge and inspire others to develop their cybersecurity skills while contributing to a safer digital world.",
     "AboutSkills": [
-      "OpenVAS",
+      "Acunetix",
       "Nessus",
       "BurpSuite",
       "Linux",
       "Python",
-      "MITRE ATT&CK",
-      "ISO 27001"
+      "Bash Script"
     ]
   },
   "Socials": {
@@ -33,20 +32,20 @@
         "Machine Learning",
         "Wi-Fi Security"
       ],
-      "DemoLink": "https://github.com/username/Pwnagotchi",
+      "DemoLink": "https://pwnagotchi.org/index.html",
       "GitLink": "https://github.com/username/Pwnagotchi"
     },
     {
       "id": 2,
-      "Title": "Port Scanner",
-      "Description": "Created a Python-based port scanning tool using socket programming and datetime modules.",
+      "Title": "Sunset:1",
+      "Description": "Test your penetration testing skills with the Sunset:1 machine from VulnHub. Explore enumeration, exploit vulnerabilities, and escalate privileges to root.",
       "Tags": [
-        "Python",
-        "Socket Programming",
-        "Networking"
+        "Penetration Testing",
+        "Linux",
+        "CTF"
       ],
-      "DemoLink": "https://github.com/username/PortScanner",
-      "GitLink": "https://github.com/username/PortScanner"
+      "DemoLink": "https://medium.com/@nikhilbwr34/sunset-1-walkthrough-d124d06fcc93",
+      "GitLink": ""
     },
     {
       "id": 3,
@@ -57,20 +56,20 @@
         "VMWare",
         "Cybersecurity"
       ],
-      "DemoLink": "https://github.com/username/HomeLab",
-      "GitLink": "https://github.com/username/HomeLab"
+      "DemoLink": "https://medium.com/@nikhilbwr34/step-by-step-guide-installing-windows-kali-linux-virtual-machines-on-vmware-workstation-pro-615a910798eb",
+      "GitLink": ""
     },
     {
       "id": 4,
-      "Title": "Vulnerability Assessment and Penetration Testing Report",
-      "Description": "Performed a penetration test on a demo vulnerable website and documented findings in a comprehensive report.",
+      "Title": "Introduction to VAPT: Tools, Attacks, and Methodologies",
+      "Description": "A detailed exploration of Vulnerability Assessment and Penetration Testing tools, including Nmap, Nessus, and Burp Suite, combined with insights into OWASP Top 10 vulnerabilities.",
       "Tags": [
         "Penetration Testing",
         "Vulnerability Assessment",
         "Reporting"
       ],
-      "DemoLink": "https://github.com/username/VAPT-Report",
-      "GitLink": "https://github.com/username/VAPT-Report"
+      "DemoLink": "",
+      "GitLink": "https://github.com/NIKHIL-WR34/VAPT-Report/"
     }
   ]
 }
