@@ -37,15 +37,15 @@
     },
     {
       "id": 2,
-      "Title": "Port Scanner",
-      "Description": "Created a Python-based port scanning tool using socket programming and datetime modules.",
+      "Title": "Sunset:1",
+      "Description": "Test your penetration testing skills with the Sunset:1 machine from VulnHub. Explore enumeration, exploit vulnerabilities, and escalate privileges to root.",
       "Tags": [
-        "Python",
-        "Socket Programming",
-        "Networking"
+        "Penetration Testing",
+        "Linux",
+        "CTF"
       ],
-      "DemoLink": "https://github.com/username/PortScanner",
-      "GitLink": "https://github.com/username/PortScanner"
+      "DemoLink": "https://medium.com/@nikhilbwr34/sunset-1-walkthrough-d124d06fcc93",
+      "GitLink": ""
     },
     {
       "id": 3,
