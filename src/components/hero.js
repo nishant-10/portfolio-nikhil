@@ -14,9 +14,9 @@ function Hero() {
               window.open(`${homepage_data.Socials.LinkedIn ?? "#"}`);
             }}
           >
-           # Nikhil Bhandari
+           #~ Nikhil Bhandari
           </h1>
-          <h1 className="built">I build things on web.</h1>
+          <h1 className="built">I test, secure, and hack the web ethically.</h1>
           <span>
             <h5 className="desc">
               {homepage_data.AllText.heroDescription}

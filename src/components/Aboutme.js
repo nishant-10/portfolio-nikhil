@@ -19,7 +19,7 @@ function Aboutme() {
             <p className="aboutPara" id="aboutParaTwo">{homepage_data.AllText.AboutParaTwo}</p>
             <p className="aboutPara" id="aboutParaThree">{homepage_data.AllText.AboutParaThree}</p>
             <p className="aboutPara" id="aboutParaSkillsIntro">
-              Here are a few technologies I’ve been working with recently:
+            Here are a few tools and technologies I’ve been working with recently:
             </p>
             <div className="aboutSkills" id="aboutSkills">
               <ul className="aboutSkillul" id="aboutSkillList">
