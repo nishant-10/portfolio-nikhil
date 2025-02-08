@@ -45,7 +45,7 @@ function Navbar() {
           </li>
           <li>
             <a href="#cardArea">
-              <p>02. </p>Projects
+              <p>02. </p>Projects & Writeups
             </a>
           </li>
           <li>
