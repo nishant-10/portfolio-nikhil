@@ -95,13 +95,12 @@ function SocialFoot() {
           Made by{" "}
           <a
             style={{ color: "#7d87a4", textDecoration: "underline" }}
-            href="https://github.com/nishant-10"
           >
-            nishant
+            Nikhil
           </a>{" "}
           with <span style={{ color: "red" }}>❤</span>
         </div>
-        <div>Last updated on January 2025</div>
+        <div>Last updated on February 2025</div>
       </div>
     </>
   );

@@ -36,7 +36,7 @@ function ProjectCards() {
         <h1 className="cah1 cardAreaTitle">02. Noteworthy Projects & Writups</h1>
         <h1 className="cah1 cardAreaSubTitle">Personal & Academic</h1>
         <h1 className="cah1 cardAreaInfo">
-          Click on card for a demo and Git icon for repository
+          Click on card for more details
         </h1>
         <div className="cards">
           <Cards visiblecards={visible} data={homepage_data} />

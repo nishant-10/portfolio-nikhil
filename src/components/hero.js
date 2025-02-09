@@ -46,7 +46,7 @@ function Hero() {
       {/* <div className="lnk">
         <ul>
           <li>
-            <a href="#">nishantjoshi863@gmail.com</a>
+            <a href="#"> </a>
           </li>
         </ul>
       </div> */}
